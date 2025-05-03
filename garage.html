@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гараж Ильи | Фото и Видео</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="prices.html" class="nav-link">Цены</a>
+                <a href="garage.html" class="nav-link active">Галерея</a>
+                <a href="reviews.html" class="nav-link">Отзывы</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+            <h1>Гараж Ильи</h1>
+        </div>
+    </header>
+    <main>
+        <section class="garage-hero">
+            <div class="container">
+                <h2>Фото & Видео из гаража</h2>
+                <p class="subtitle">Без пафоса, зато с приколами</p>
+            </div>
+        </section>
+        <section class="garage-photos">
+            <div class="container">
+                <h3>Ловите мой ракурс</h3>
+                <div class="photo-grid">
+                    <div class="photo-item" data-tooltip="Это не грязь, это 'патина опыта'">
+                        <img src="Img/photo1.jpg" alt="Рабочая поза">
+                        <div class="photo-caption">Да, я знаю, что делаю. Нет, я не знаю, где второй носок.</div>
+                    </div>
+                    <div class="photo-item" data-tooltip="В раздумьях о смысле жизни и прокладках">
+                        <img src="Img/photo2.jpg" alt="Момент истины">
+                        <div class="photo-caption">Либо щас починю, либо начну продавать запчасти.</div>
+                    </div>
+                    <div class="photo-item" data-tooltip="Масло – это не только для двигателя, но и для потолка">
+                        <img src="Img/photo3.jpg" alt="После 'успешного' ремонта">
+                        <div class="photo-caption">Главное – мотик завелся. Остальное – мелочи.</div>
+                    </div>
+                    <div class="photo-item" data-tooltip="Он точно улыбается под шлемом. Точно.">
+                        <img src="Img/photo4.jpg" alt="Клиент доволен (наверное)">
+                        <div class="photo-caption">Он точно улыбается под шлемом. Точно.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="garage-videos">
+            <div class="container">
+                <h3>Движухи ради движухи</h3>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video src="Videos/video1.MOV" controls poster="Img/photo1.jpg" width="320"></video>
+                            <button class="custom-play-btn" aria-label="Воспроизвести видео"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="video-caption">Экономия на воронке – 50₽. Уборка после – 2 часа.</div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video src="Videos/video2.MOV" controls poster="Img/photo2.jpg" width="320"></video>
+                            <button class="custom-play-btn" aria-label="Воспроизвести видео"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="video-caption">В реальном времени это выглядело грустнее.</div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video src="Videos/video3.MOV" controls poster="Img/photo3.jpg" width="320"></video>
+                            <button class="custom-play-btn" aria-label="Воспроизвести видео"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="video-caption">Тормоза работают. Штаны – нет.</div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video src="Videos/video4.MOV" controls poster="Img/photo4.jpg" width="320"></video>
+                            <button class="custom-play-btn" aria-label="Воспроизвести видео"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="video-caption">Вот ради этого мы и работаем.</div>
+                    </div>
+                </div>
+                <button class="more-video-btn">Если ролик понравился – вот вам ещё один (но он такой же)</button>
+            </div>
+        </section>
+        <section class="garage-final">
+            <div class="container">
+                <p class="final-text">Если ждали крутых монтажей – вы не туда попали. Зато честно.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ремонт мотоциклов. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

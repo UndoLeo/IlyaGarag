@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Ремонт мотоциклов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="prices.html" class="nav-link">Цены</a>
+                <a href="garage.html" class="nav-link">Галерея</a>
+                <a href="reviews.html" class="nav-link">Отзывы</a>
+                <a href="contact.html" class="nav-link active">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Ты дошел до самого страшного – теперь тебе придется с нами общаться</h1>
+                <p class="subtitle">Если ты не трус, конечно</p>
+            </div>
+        </section>
+        <section class="contact-info">
+            <div class="container contact-flex">
+                <div class="contact-address">
+                    <h2>📍 Адрес гаража</h2>
+                    <p class="address-text" title="Если приедешь в 3 ночи – можешь застать Илью за философскими размышлениями о жизни (и разборкой двигателя)">
+                        Ищи синюю дверь за 'Пятёрочкой'. Если упрешься в забор – ты не дошел. Если упрешься в менты – ты прошел.
+                    </p>
+                    <div class="map-block">
+                        <iframe src="https://www.google.com/maps?q=43.096206,131.940687&z=17&output=embed" width="100%" height="250" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Тут сидит Илья"></iframe>
+                    </div>
+                    <div class="garage-photo">
+                        <img src="Img/garage.jpg" alt="Гараж Ильи">
+                        <div class="garage-caption">Да, выглядит подозрительно. Но внутри почти не страшно</div>
+                    </div>
+                </div>
+                <div class="contact-ways">
+                    <h2>Связаться с Ильёй</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span class="method-title">📞 – Старая школа</span>
+                            <a href="tel:+79991234567" class="contact-link phone-link" title="Ты уверен? Ты точно уверен? Ну ладно...">+7 (999) 123-45-67</a>
+                            <div class="method-desc">Звони, если не боишься услышать мат через трубку</div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="method-title">💬 – Для тех, кто стесняется</span>
+                            <a href="https://wa.me/79991234567" target="_blank" class="contact-link">WhatsApp</a>
+                            <div class="method-desc">Пиши, если хочешь получить голосовое на 5 минут вместо 'ок'</div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-telegram-plane"></i>
+                            <span class="method-title">✈️ – Для смелых</span>
+                            <a href="https://t.me/Kailruster" target="_blank" class="contact-link">Telegram</a>
+                            <div class="method-desc">Тут Илья иногда даже отвечает (но это не точно)</div>
+                        </div>
+                    </div>
+                    <div class="qr-block">
+                        <img src="Img/qr.jpg" alt="QR для контактов">
+                        <div class="qr-caption">Отсканируй, если не можешь запомнить три цифры телефона</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-schedule">
+            <div class="container">
+                <h2>🕒 График работы</h2>
+                <table class="schedule-table">
+                    <tr><th>День</th><th>Часы</th><th>Примечание</th></tr>
+                    <tr><td>Пн-Пт</td><td>10:00 – 20:00</td><td>Если не уснул в гараже</td></tr>
+                    <tr><td>Сб</td><td>12:00 – 18:00</td><td>С похмелья, но работает</td></tr>
+                    <tr><td>Вс</td><td>Теоретически выходной</td><td>Но если очень надо – пиши в Telegram</td></tr>
+                </table>
+                <div class="schedule-caption">График плавающий, как масло в картере после ремонта</div>
+            </div>
+        </section>
+        <section class="contact-form-section">
+            <div class="container">
+                <h2>📝 Форма записи</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-step">
+                        <label>Шаг 1: Выбери проблему (если сам понимаешь, что сломалось)</label>
+                        <select name="problem" required>
+                            <option value="">Выбери...</option>
+                            <option>Не едет</option>
+                            <option>Не заводится</option>
+                            <option>Стучит, гремит, пугает детей</option>
+                            <option>Хочу, чтобы было красиво (ну ты понтовый)</option>
+                        </select>
+                    </div>
+                    <div class="form-step">
+                        <label>Шаг 2: Когда приедешь?</label>
+                        <input type="date" name="date" required placeholder="Выбери день, когда Илья будет в настроении">
+                        <select name="time" required>
+                            <option value="">Время</option>
+                            <option>Утро – для жаворонков</option>
+                            <option>Вечер – для нормальных людей</option>
+                        </select>
+                    </div>
+                    <div class="form-step">
+                        <label>Шаг 3: Твои контакты (а то вдруг передумаешь)</label>
+                        <input type="text" name="name" required placeholder="Имя (можно кличку, мы не в паспортный стол)">
+                        <input type="tel" name="phone" required placeholder="Телефон (только не пиши маме номер)">
+                    </div>
+                    <button type="submit" class="submit-btn">Жми сюда, если не передумал</button>
+                </form>
+                <div class="form-success" id="formSuccess" style="display:none;">
+                    Поздравляю! Теперь Илья будет твоим личным психологом (ну и мотоцикл починит)
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Если не отвечаем – значит, чиним. Или спим. Или чиним во сне.</p>
+        </div>
+    </footer>
+    <script>
+    // Всплывающая подсказка на адрес
+    document.addEventListener('DOMContentLoaded', function() {
+        const address = document.querySelector('.address-text');
+        if(address) {
+            address.addEventListener('mouseenter', function() {
+                address.setAttribute('data-tooltip', address.title);
+            });
+            address.addEventListener('mouseleave', function() {
+                address.removeAttribute('data-tooltip');
+            });
+        }
+        // Модалка на телефон
+        const phoneLink = document.querySelector('.phone-link');
+        if(phoneLink) {
+            phoneLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                if(confirm('Ты уверен? Ты точно уверен? Ну ладно...')) {
+                    window.location.href = phoneLink.href;
+                }
+            });
+        }
+        // Сообщение после отправки формы
+        const form = document.getElementById('contactForm');
+        const success = document.getElementById('formSuccess');
+        if(form && success) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                form.style.display = 'none';
+                success.style.display = 'block';
+            });
+        }
+    });
+    </script>
+    <script src="script.js"></script>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+</body>
+</html> 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы | Народная молва</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="prices.html" class="nav-link">Цены</a>
+                <a href="garage.html" class="nav-link">Галерея</a>
+                <a href="reviews.html" class="nav-link active">Отзывы</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+            <h1>Народная молва (и немного алкоголя)</h1>
+        </div>
+    </header>
+    <main>
+        <section class="reviews-hero">
+            <div class="container">
+                <h2>Вот что говорят люди (а им виднее)</h2>
+                <p class="subtitle">Если не верите нам – поверьте этим чувакам. Или не верьте. Нам вообще без разницы.</p>
+            </div>
+        </section>
+        <section class="reviews-videos">
+            <div class="container">
+                <h3>Когда словами не передать</h3>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video src="Videos/video4.MOV" controls poster="Img/photo1.jpg" width="320"></video>
+                            <button class="custom-play-btn" aria-label="Воспроизвести видео"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="video-caption">Василий, 3 недели не мог завести 'Honda'. Теперь не может заглушить.</div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <video src="Videos/video6.MOV" controls poster="Img/photo2.jpg" width="320"></video>
+                            <button class="custom-play-btn" aria-label="Воспроизвести видео"><i class="fas fa-play"></i></button>
+                        </div>
+                        <div class="video-caption">Анна. Сказала, что всё ок. Больше слов не нашла.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-texts">
+            <div class="container">
+                <h3>Правда, боль и немного стыда</h3>
+                <div class="text-reviews">
+                    <div class="text-review">
+                        <div class="review-author">Колян</div>
+                        <div class="review-text">"Привёз 'Урал' – сказали, что проще спалить. Через неделю забрал работающий. Не знаю, как вы это сделали, но я теперь вам должен жизнь."</div>
+                    </div>
+                    <div class="text-review">
+                        <div class="review-author">Марина</div>
+                        <div class="review-text">"Мой муж два месяца 'чинил' мопед. Илья сделал за день. Муж теперь грустит. 5 звёзд."</div>
+                    </div>
+                    <div class="text-review">
+                        <div class="review-author">Аноним</div>
+                        <div class="review-text">"Я думал, что знаю мотоциклы. Потом пришёл сюда. Теперь я знаю, что я – говно."</div>
+                    </div>
+                    <div class="text-review fake-review" id="fake-review"></div>
+                </div>
+                <button class="fake-btn" id="fake-btn">Нажми, если твой отзыв – ложь</button>
+            </div>
+        </section>
+        <section class="reviews-form">
+            <div class="container">
+                <h3>Ты уверен, что хочешь это сделать?</h3>
+                <form id="review-form" enctype="multipart/form-data">
+                    <input type="text" name="name" placeholder="Твоё имя (или кличка, мы не в паспортный стол)" required>
+                    <input type="file" name="photo" accept="image/*">
+                    <textarea name="text" placeholder="Твой 'шедевр' (пиши, не стесняйся, мы всё равно вырежем половину)" required></textarea>
+                    <button type="submit" class="submit-btn">Отправить (и не ныть, если мы его исправим)</button>
+                </form>
+            </div>
+        </section>
+        <div class="modal" id="review-modal">
+            <div class="modal-content">
+                <p>Ты точно не пидор?</p>
+                <button id="modal-yes" class="modal-btn">Да (продолжить)</button>
+                <button id="modal-no" class="modal-btn">Нет (значит, ты нам не подходишь)</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Все отзывы настоящие. Ну кроме тех, которые мы придумали.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

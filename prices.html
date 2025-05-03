@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены и калькулятор | Ремонт мотоциклов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="prices.html" class="nav-link active">Цены</a>
+                <a href="garage.html" class="nav-link">Галерея</a>
+                <a href="reviews.html" class="nav-link">Отзывы</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+            <h1>Цены</h1>
+        </div>
+    </header>
+    <main>
+        <section class="prices-hero">
+            <div class="container">
+                <h2>Сколько стоит? Сейчас посчитаем…</h2>
+                <p class="subtitle">Цены ниже, чем моральный облик предыдущего владельца твоего мотика</p>
+            </div>
+        </section>
+        <section class="prices-table-section">
+            <div class="container">
+                <h3>Без воды, только цифры</h3>
+                <table class="prices-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Цена "от"</th>
+                            <th>Примечание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Диагностика</td>
+                            <td>500 ₽</td>
+                            <td>Если не найдём проблему – вернём 500 ₽… в магазин</td>
+                        </tr>
+                        <tr>
+                            <td>Замена масла</td>
+                            <td>1 000 ₽</td>
+                            <td>Масло в подарок (шутка, оно отдельно)</td>
+                        </tr>
+                        <tr>
+                            <td>Ремонт двигателя</td>
+                            <td>от 5 000 ₽</td>
+                            <td>Если убил его вдрызг – готовь ещё столько же</td>
+                        </tr>
+                        <tr>
+                            <td>Чип-тюнинг</td>
+                            <td>7 000 ₽</td>
+                            <td>Будет рвать так, что штаны поедят</td>
+                        </tr>
+                        <tr>
+                            <td>Эвакуация</td>
+                            <td>2 000 ₽</td>
+                            <td>Если везешь мотик на себе – скидка 50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="prices-feature">👉 Цены могут меняться, если ты очень настойчиво просишь скидку</div>
+            </div>
+        </section>
+        <section class="prices-calc-section">
+            <div class="container">
+                <h3>Калькулятор стоимости</h3>
+                <div class="calc-steps">
+                    <div class="calc-step">
+                        <span class="calc-step-title">Шаг 1: Выбери проблему →</span>
+                        <div class="calc-options" id="calc-problem">
+                            <button class="calc-btn" data-value="classic">Не заводится <span>(Классика)</span></button>
+                            <button class="calc-btn" data-value="knock">Стучит <span>(Опасно, но поправимо)</span></button>
+                            <button class="calc-btn" data-value="dead">Умер на ходу <span>(Сочувствуем… но чиним)</span></button>
+                        </div>
+                    </div>
+                    <div class="calc-step">
+                        <span class="calc-step-title">Шаг 2: Выбери мотик →</span>
+                        <div class="calc-options" id="calc-bike">
+                            <button class="calc-btn" data-value="japan">Японка <span>(Дорого, но надёжно)</span></button>
+                            <button class="calc-btn" data-value="china">Китаец <span>(Дешево, но… ну ты знаешь)</span></button>
+                            <button class="calc-btn" data-value="ussr">Советский <span>(Бессмертный, но вечно больной)</span></button>
+                        </div>
+                    </div>
+                    <div class="calc-step">
+                        <span class="calc-step-title">Шаг 3: Получи примерную цену →</span>
+                        <div class="calc-result" id="calc-result">Готовь от 3 000 ₽ до… ой, лучше не спрашивай</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prices-actions-section">
+            <div class="container">
+                <h3>Лови выгоду, пока Илья в духе</h3>
+                <ul class="actions-list">
+                    <li>🔥 Первый ремонт – скидка 10% <span>(Новичкам везёт)</span></li>
+                    <li>🔥 Приведи друга – получи скидку на пиво <span>(Ну или на ремонт)</span></li>
+                    <li>🔥 Зимний спец-цена – Чиним сейчас, чтоб весной не стоять в очереди</li>
+                </ul>
+                <div class="actions-feature">👉 Акции действуют, пока не закончилось терпение</div>
+            </div>
+        </section>
+        <section class="prices-parts-section">
+            <div class="container">
+                <h3>Запчасти в наличии</h3>
+                <ul class="parts-list">
+                    <li>Масло – от 800 ₽ <span>(Не то, что в 'Пятёрочке')</span></li>
+                    <li>Цепь – от 2 500 ₽ <span>(Чтобы не отлетела на первом кочке)</span></li>
+                    <li>Фильтры – от 500 ₽ <span>(Чтоб мотор не жрал грязь)</span></li>
+                </ul>
+                <div class="parts-feature">👉 Если нет в наличии – привезём через час… ну или через день</div>
+            </div>
+        </section>
+        <section class="prices-video-section">
+            <div class="container">
+                <h3>Как мы работаем (на самом деле)</h3>
+                <div class="video-block">
+                    <video src="Videos/vid1.MOV" controls poster="/Img/ilya.jpg" width="480"></video>
+                </div>
+                <div class="video-caption">0:01 – Илья смотрит на мотик с умным видом.<br>0:05 – Берёт молоток ("Это для устрашения").<br>0:10 – Чинит одной отверткой ("Волшебство, не иначе").<br>0:15 – Мотик заводится ("Клиент в шоке").<br><b>90% работы – это ударить в нужное место</b></div>
+            </div>
+        </section>
+        <section class="prices-cta-section">
+            <div class="container">
+                <h2>Остались вопросы? Звони, не стесняйся!</h2>
+                <div class="cta-buttons">
+                    <a href="tel:+79999999999" class="cta-btn phone"><i class="fas fa-phone"></i> Илья: 'Давайте уже ремонтировать, а не считать!'</a>
+                </div>
+                <p class="cta-note">Если кажется, что дорого – вспомни, сколько стоит новый мотик 😎</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ремонт мотоциклов. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

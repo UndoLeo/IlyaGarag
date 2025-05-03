@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт мотоциклов | Главная</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="prices.html" class="nav-link">Цены</a>
+                <a href="garage.html" class="nav-link">Галерея</a>
+                <a href="reviews.html" class="nav-link">Отзывы</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+            <h1>Ремонт мотоциклов</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция приветствия с параллаксом -->
+        <section class="hero parallax-container">
+            <div class="parallax-bg" data-speed="0.5" style="background-image: url('parallax-bg.jpg');"></div>
+            <div class="container parallax-content">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Привет, я Илья</h2>
+                        <p>Профессиональный мастер по ремонту мотоциклов с многолетним опытом работы.</p>
+                        <p>Моя философия - качественный ремонт по честной цене.</p>
+                        <button class="contact-hero-btn">Связаться</button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="Img/ilya.jpg" alt="Илья - мастер по ремонту мотоциклов">
+                        <div class="hero-caption">Ваш мастер — Илья</div>
+                        <div class="hero-decor"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши работы -->
+        <section class="motorcycle-showcase">
+            <div class="container">
+                <h2>Наши работы</h2>
+                <div class="showcase-grid">
+                    <div class="showcase-item">
+                        <img src="Img/Img1.jpg" alt="Мотоцикл 1">
+                        <div class="showcase-overlay">
+                            <h3>Капитальный ремонт</h3>
+                            <p>Полная реставрация двигателя</p>
+                        </div>
+                    </div>
+                    <div class="showcase-item">
+                        <img src="Img/img2.jpg" alt="Мотоцикл 2">
+                        <div class="showcase-overlay">
+                            <h3>Тюнинг</h3>
+                            <p>Улучшение характеристик</p>
+                        </div>
+                    </div>
+                    <div class="showcase-item">
+                        <img src="Img/img3.jpg" alt="Мотоцикл 3">
+                        <div class="showcase-overlay">
+                            <h3>Обслуживание</h3>
+                            <p>Регулярное ТО</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="advantages">
+            <div class="container">
+                <h2>Почему выбирают нас</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Честные цены</h3>
+                        <p>Прозрачное ценообразование без скрытых платежей</p>
+                    </div>
+                    <div class="advantage-item">
+                        <i class="fas fa-store-slash"></i>
+                        <h3>Без наценок дилеров</h3>
+                        <p>Прямые поставки запчастей от производителей</p>
+                    </div>
+                    <div class="advantage-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Гарантия на работу</h3>
+                        <p>Даем гарантию на все выполненные работы</p>
+                    </div>
+                    <div class="advantage-item">
+                        <i class="fas fa-tools"></i>
+                        <h3>Профессиональное оборудование</h3>
+                        <p>Современное оборудование для качественного ремонта</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Срочный вызов -->
+        <section class="emergency">
+            <div class="container">
+                <div class="emergency-content">
+                    <h2>Экстренная помощь на дороге</h2>
+                    <p>Поможем в любой ситуации, 24/7</p>
+                    <div class="emergency-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="Img/il1.MP4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <button class="emergency-button">Вызвать мастера</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="services">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Диагностика</h3>
+                        <p>Комплексная проверка всех систем мотоцикла</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Ремонт двигателя</h3>
+                        <p>Капитальный и текущий ремонт двигателей</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Обслуживание</h3>
+                        <p>Регулярное техническое обслуживание</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="reviews">
+            <div class="container">
+                <h2>Отзывы клиентов</h2>
+                <div class="reviews-grid">
+                    <div class="review-item">
+                        <img src="Img/ilya.jpg" alt="Клиент 1">
+                        <h3>Александр</h3>
+                        <p>"Отличный сервис! Быстро и качественно отремонтировали мой мотоцикл."</p>
+                    </div>
+                    <div class="review-item">
+                        <img src="Img/ilya.jpg" alt="Клиент 2">
+                        <h3>Мария</h3>
+                        <p>"Очень довольна работой мастера. Цены адекватные, качество на высоте."</p>
+                    </div>
+                    <div class="review-item">
+                        <img src="Img/ilya.jpg" alt="Клиент 3">
+                        <h3>Дмитрий</h3>
+                        <p>"Профессионалы своего дела. Рекомендую всем мотоциклистам!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея -->
+        <section class="gallery">
+            <div class="container">
+                <h2>Наши работы</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="Img/Img1.jpg" alt="До ремонта">
+                        <img src="Img/img2.jpg" alt="После ремонта">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Img/img3.jpg" alt="До ремонта">
+                        <img src="Img/Img1.jpg" alt="После ремонта">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контактная форма -->
+        <section class="contact">
+            <div class="container">
+                <h2>Связаться с нами</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <textarea placeholder="Опишите проблему" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Счетчик -->
+        <section class="counter">
+            <div class="container">
+                <div class="counter-content">
+                    <i class="fas fa-wrench"></i>
+                    <span class="counter-number">500+</span>
+                    <p>отремонтированных мотоциклов</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ремонт мотоциклов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
